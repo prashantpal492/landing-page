@@ -1,5 +1,3 @@
-
-
 .consulation-wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -22,11 +20,6 @@
   display: flex;
   justify-content: center;
 }
-
-/* .consulation-wrapper .img img {
-  width: 100%;
-  height: 100%;
-} */
 
 /* Services css */
 .services-wrapper .heading {
@@ -71,6 +64,9 @@
 .services-wrapper .cards-section .card .image {
   display: flex;
   justify-content: center;
+}
+.services-wrapper .cards-section .card .image img {
+  object-fit: contain;
 }
 .services-wrapper .cards-section .card .content {
   display: flex;
@@ -140,8 +136,6 @@
   right: 8%;
   top: -8%;
 }
-.case-studies-wrapper {
-}
 
 .case-studies-wrapper .case-studies-column {
   display: flex;
@@ -194,6 +188,10 @@
     grid-template-columns: 100%;
     gap: 15px;
   }
+  .consulation-wrapper .content button {
+    display: block;
+    margin: auto;
+  }
   .services-wrapper .cards-section {
     grid-template-columns: 1fr;
   }
@@ -201,6 +199,9 @@
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
+  }
+  .services-wrapper .cards-section .card .content .learn-more {
+    padding: 0;
   }
   .proposal-wrapper .image {
     position: relative;
@@ -213,6 +214,10 @@
   .proposal-wrapper .content {
     order: 2;
   }
+  .proposal-wrapper .content button {
+    display: block;
+    margin: auto;
+  }
   .proposal-wrapper {
     grid-template-columns: 100%;
     gap: 20px;
@@ -223,6 +228,9 @@
   }
   .case-studies-wrapper .case-studies-column .column {
     padding: 0 0 15px;
+  }
+  .case-studies-wrapper .case-studies-column .column .learn-more button {
+    padding: 0;
   }
   .case-studies-wrapper .case-studies-column .column::after {
     content: "";
