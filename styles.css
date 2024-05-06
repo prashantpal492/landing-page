@@ -1,5 +1,5 @@
-@import url("colors.css");
-@import url("breakpoints.css");
+@import url("./styles/colors.css");
+@import url("./styles/breakpoints.css");
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +9,8 @@ body {
   max-width: var(--container-size);
   margin: auto;
 }
+
+/* common text css */
 
 .text-white {
   color: var(--color-white);
@@ -117,6 +119,9 @@ body {
   align-items: center;
   gap: 25px;
 }
+.header-wrapper .content .request-quote-mobile{
+    display: none;
+}
 .header-wrapper .content ul li {
   list-style: none;
 }
@@ -129,12 +134,24 @@ body {
 /* Header CSS END*/
 
 /* company-logo */
-.company-logo {
-  display: flex;
-  gap: 25px;
-  justify-content: space-between;
-}
+
 .company-logo img {
   /* width: 100%;
     flex-basis: 20%; */
+}
+
+/* tablet css */
+@media only screen and (max-width: 1220px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width:800px) {
+    .request-quote-desktop{
+        display: none;
+
+    }
+    .header-wrapper .content .request-quote-mobile{
+        display: block;
+    }
 }

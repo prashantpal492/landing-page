@@ -1,7 +1,9 @@
+
+
 .consulation-wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 30px;
+  /* gap: 30px; */
 }
 
 .consulation-wrapper .content {
@@ -184,4 +186,56 @@
   display: flex;
   gap: 25px;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+  .consulation-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 15px;
+  }
+  .services-wrapper .cards-section {
+    grid-template-columns: 1fr;
+  }
+  .company-logo {
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  .proposal-wrapper .image {
+    position: relative;
+    right: unset;
+    top: unset;
+    display: flex;
+    justify-content: center;
+    order: 1;
+  }
+  .proposal-wrapper .content {
+    order: 2;
+  }
+  .proposal-wrapper {
+    grid-template-columns: 100%;
+    gap: 20px;
+    padding: 20px;
+  }
+  .case-studies-wrapper .case-studies-column {
+    flex-direction: column;
+  }
+  .case-studies-wrapper .case-studies-column .column {
+    padding: 0 0 15px;
+  }
+  .case-studies-wrapper .case-studies-column .column::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: var(--color-green);
+    position: absolute;
+    right: 0px;
+    top: unset;
+    bottom: 0px;
+  }
+  .case-studies-wrapper .case-studies-column .column:last-child::after {
+    width: 100%;
+    height: 0px;
+  }
 }
