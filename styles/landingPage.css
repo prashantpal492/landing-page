@@ -1,0 +1,187 @@
+.consulation-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+}
+
+.consulation-wrapper .content {
+  width: 100%;
+}
+.consulation-wrapper .content h1 {
+  color: var(--color-black);
+  font: 600 33px/1.3 "Space Grotesk";
+}
+.consulation-wrapper .content p {
+  color: var(--color-black);
+  font: 400 16px/1.3 "Space Grotesk";
+}
+.consulation-wrapper .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* .consulation-wrapper .img img {
+  width: 100%;
+  height: 100%;
+} */
+
+/* Services css */
+.services-wrapper .heading {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.services-wrapper .heading h2 {
+  color: var(--color-black);
+  font: 500 22px/1.3 "Space Grotesk";
+}
+.services-wrapper .heading p {
+  color: var(--color-black);
+  font: 400 14px/1.3 "Space Grotesk";
+  max-width: 458px;
+}
+
+.services-wrapper .cards-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.services-wrapper .cards-section .card {
+  border-radius: 20px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 172px;
+  box-shadow: 0px 3px 0px 0px var(--color-primary-black);
+}
+.services-wrapper .cards-section .card.bg-grey {
+  background: var(--color-grey);
+}
+.services-wrapper .cards-section .card.bg-green {
+  background: var(--color-green);
+}
+.services-wrapper .cards-section .card.bg-black {
+  background: var(--color-primary-black);
+}
+
+.services-wrapper .cards-section .card .image {
+  display: flex;
+  justify-content: center;
+}
+.services-wrapper .cards-section .card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.services-wrapper .cards-section .card .content .learn-more {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-black);
+  font: 400 15px/1.3 "Space Grotesk";
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.services-wrapper .cards-section .card .content .learn-more.light {
+  color: var(--color-white);
+}
+.services-wrapper .cards-section .card .content .learn-more span {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-wrapper .cards-section .card .content .learn-more span.dark {
+  background: var(--color-primary-black);
+}
+.services-wrapper .cards-section .card .content .learn-more span.light {
+  background: var(--color-white);
+}
+.services-wrapper .cards-section .card .content h2 {
+  margin: 0;
+  color: var(--color-black);
+  font: 500 18px/1.3 "Space Grotesk";
+}
+
+.proposal-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  background: var(--color-grey);
+  border-radius: 20px;
+  padding: 0 28px;
+  position: relative;
+  min-height: 193px;
+  align-items: center;
+}
+
+.proposal-wrapper .content {
+  width: 100%;
+}
+.proposal-wrapper .content h2 {
+  color: var(--color-black);
+  font: 600 18px/1.3 "Space Grotesk";
+}
+.proposal-wrapper .content p {
+  color: var(--color-black);
+  font: 400 14px/1.3 "Space Grotesk";
+}
+.proposal-wrapper .image {
+  display: grid;
+  justify-content: center;
+  position: absolute;
+  right: 8%;
+  top: -8%;
+}
+.case-studies-wrapper {
+}
+
+.case-studies-wrapper .case-studies-column {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background: var(--color-primary-black);
+  border-radius: 20px;
+  padding: 30px;
+}
+.case-studies-wrapper .case-studies-column .column::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: var(--color-green);
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+.case-studies-wrapper .case-studies-column .column:last-child::after {
+  width: 0px;
+}
+.case-studies-wrapper .case-studies-column .column .text p {
+  color: var(--color-white);
+  font: 400 14px/1.3 "Space Grotesk";
+}
+.case-studies-wrapper .case-studies-column .column .learn-more button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--color-green);
+  font: 400 15px/1.3 "Space Grotesk";
+  border: none;
+  background: transparent;
+}
+.case-studies-wrapper .case-studies-column .column {
+  flex-basis: calc(100% / 3);
+  padding: 0px 40px;
+  position: relative;
+}
+
+.company-logo {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+}

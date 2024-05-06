@@ -1,0 +1,8 @@
+:root {
+    --mobile: 575px;
+    --tablet:767px;
+    --semi-devices: 992px;
+    --desktp:1200px;
+    --container-size:1200px;
+  }
+  
